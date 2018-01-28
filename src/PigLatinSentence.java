@@ -30,7 +30,7 @@ public class PigLatinSentence {
 			int length = inputWords.length; // length of the array, number of words
 
 			System.out.println("\nTranslation: ");
-			// use a for loop to do operation for each word"
+			// use a for loop to do operation for each word
 			// convert each word to StringBuffer
 			// call method to find vowel
 			// call method to return pig latin
@@ -61,7 +61,7 @@ public class PigLatinSentence {
 	public static int findVowelIndex(StringBuffer buffWord) {
 
 		int i = 0;
-		while (i < buffWord.length()) {
+		while (i < buffWord.length()) {  // Question: This didn't work with for loop, for words like "goodness" - prob with two vowels?
 			if (buffWord.charAt(i) == 'a') {
 				break;
 			}
@@ -82,7 +82,7 @@ public class PigLatinSentence {
 		return i;
 	}
 
-	// method, take in buffWord and index of vowe, return pig latin as string
+	// method, take in buffWord and index of vowel, return pig latin as string
 	public static String makePigLatin(StringBuffer buffWord, int vowelIndex) {
 
 		String pigLatin;

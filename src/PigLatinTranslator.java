@@ -67,7 +67,7 @@ public class PigLatinTranslator {
 		return i;
 	}
 
-	// method, take in buffWord and index of vowe, return pig latin as string
+	// method, take in buffWord and index of vowel, return pig latin as string
 	public static String makePigLatin(StringBuffer buffWord, int vowelIndex) {
 
 		String pigLatin;
